@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>Peck to {{ title }}</title>
+    {% else %}
+    <title>Peck to</title>
+    {% endif %}
+    <script src="https://www.moneybutton.com/moneybutton.js"></script>
+</head>
+<body>
+    <div class="ui segment">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
